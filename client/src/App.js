@@ -4,6 +4,7 @@ import "./index.css"
 
 import Home from "./pages/Home";
 import SEPractice from "./pages/SE-Practice";
+import ViewArticles from "./pages/SE-ViewArticles";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
 
@@ -20,6 +21,9 @@ const App = () => {
             <NavLink to="/SEPractice">Select the Practice</NavLink>
           </li>
           <li>
+            <NavLink to="/ViewArticles">View Articles</NavLink>
+          </li>
+          <li>
             <NavLink to="/SubmitArticle">Submit an Article</NavLink>
           </li>
         </ul>
@@ -27,6 +31,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/SEPractice" element={<SEPractice />} />
+            <Route path="/ViewArticles" element={<ViewArticles />} />
             <Route path="/SubmitArticle" element={<SubmitArticle />} />
             {/* All other paths should redirect to NotFoundPage */}
             <Route exact path="/404" element={<NotFoundPage />} />

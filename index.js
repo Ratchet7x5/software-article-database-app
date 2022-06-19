@@ -9,7 +9,6 @@ const app = express();
 
 const connectDb = require("./database/mongodb");
 const articles = require("./routes/articles");
-const practices = require("./routes/practices");
 
 // Connect MongoDB Atlas 
 connectDb();
@@ -20,7 +19,6 @@ app.use(express.json());
 
 // Routes
 app.use("/api/articles", articles);
-app.use("/api/practices", practices);
 
 // Server React build
 //new func

@@ -2,6 +2,7 @@ import axios from "axios";
 
 //gets all articles from the MongoDB
 const getAllArticles = async () => {
+  var retArticle;
   return axios.get("/api/articles").then((articles) => articles.data);
 };
 
