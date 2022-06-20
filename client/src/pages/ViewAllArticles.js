@@ -1,36 +1,25 @@
-import articles from "../dummydata/articles";
-import TableStyles from "../components/TableStyle";
-import Table from "../components/EvidenceTable";
-import TableColumns from "../components/TableColumns";
-import Dropdown from "../components/Dropdown";
+import React, {useEffect, useState} from "react";
 import { getAllArticles } from "../services/articleservice";
-import { useState } from "react";
-import { useEffect } from "react";
 
-const ViewArticles = () => {
+
+const ViewAllArticles = () => {
   const [data, getData] = useState([])
-  const URL = '/api/articles';
 
   useEffect(() => {
       fetchData()
   }, [])
 
-
   const fetchData = () => {
-      fetch(URL)
-          .then((res) =>
-              res.json())
-
+      getAllArticles()
           .then((response) => {
               console.log(response);
-              getData(response);
+              getData(response.data);
           })
-
   }
 
   return (
       <>
-        <h2>The database contains the following articles:</h2>
+        <h2>Articles in database:</h2>
         <tbody>
           <tr>
               <th>Title</th>
@@ -59,4 +48,4 @@ const ViewArticles = () => {
   );
 };
 
-export default ViewArticles;
+export default ViewAllArticles;

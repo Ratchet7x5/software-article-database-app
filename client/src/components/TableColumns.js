@@ -27,6 +27,10 @@ const TableColumns = [
     Header: "Level of Evidence",
     accessor: "evidence",
   },
+  {
+    Header: "SE Practice",
+    accessor: "sepractice",
+  },
 ];
 
 export default TableColumns;
