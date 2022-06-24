@@ -34,9 +34,9 @@ jobs:
         run: sudo npm install
         working-directory: ./client
 
-      - name: Run the tests for frontend
-        run: sudo npm test --a --watchAll=false
-        working-directory: ./client
+      # - name: Run the tests for frontend
+      #   run: sudo npm test --a --watchAll=false
+      #   working-directory: ./client
 
       - name: Build the frontend
         run: sudo npm run build
