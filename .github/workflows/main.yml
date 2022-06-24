@@ -35,7 +35,7 @@ jobs:
         working-directory: ./client
 
       - name: Run the tests for frontend
-        run: sudo npm test a -- --watchAll=false
+        run: sudo npm test --a --watchAll=false
         working-directory: ./client
         
       - name: Build the frontend
