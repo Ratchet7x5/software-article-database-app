@@ -1,7 +1,7 @@
 import React/*, { useMemo }*/ from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
 
-const Table = ({ selectedPractice, columns, data }) => {
+const Table = ({ columns, data }) => {
   const {
     getTableProps,
     getTableBodyProps,
@@ -32,7 +32,7 @@ const Table = ({ selectedPractice, columns, data }) => {
     usePagination
   );
 
-  console.log(pageSize);
+  //console.log(pageSize);
 
   const displayTable = () => (
     <>
@@ -123,20 +123,7 @@ const Table = ({ selectedPractice, columns, data }) => {
   );
 
   const displaySelectedTable = () => {
-    switch (selectedPractice) {
-      case "TDD":
-        if (data.length > 0) return displayTable();
-        return <h3>No articles found for TDD.</h3>;
-      case "Mob Programming":
-        if (data.length > 0) return displayTable();
-        return <h3>No articles found for Mob Programming.</h3>;
-      default:
-        return (
-          <h3>
-            No table selected. Please select an SE Practice from the dropdown.
-          </h3>
-        );
-    }
+    displayTable();
   };
 
   // Render Data Table UI

@@ -5,11 +5,6 @@ import TableColumns from "../components/TableColumns";
 import Dropdown from "../components/Dropdown";
 import { useState } from "react";
 
-/**
- * Current issue: The "Select An Article" Page does not display any Mob Programming Articles. 
- * Code Author: Tarun Ramachandran
- * Code Reviewer: Brayden Wallace
- */
 const SEPractice = () => {
   const [selectedPractice, setSelectedPractice] = useState("");
 

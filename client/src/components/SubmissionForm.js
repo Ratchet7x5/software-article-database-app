@@ -58,7 +58,6 @@ const SubmissionForm = () => {
     console.log(JSON.stringify(article));
     
     postArticle(article)
-    //postArticle(JSON.stringify(article))
     .then((article) => { 
       console.log(article);
     })
@@ -86,7 +85,7 @@ const SubmissionForm = () => {
       <select required onChange={sepracticeUpdate}>
         <option value="">Select SE practice...</option>
         <option value="TDD">TDD</option>
-        <option value="Mob Programming" >Mob Programming</option>
+        <option value="Mob Programming">Mob Programming</option>
       </select>
 
       <p></p>

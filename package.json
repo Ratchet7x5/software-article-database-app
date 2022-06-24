@@ -8,7 +8,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Tarun Ramachandran",
-  "license": "ISC",
+  "license": "GNU General Public License v3.0",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
@@ -16,15 +16,15 @@
     "mongoose": "^6.3.3",
     "nodemon": "^2.0.16"
   },
-  "description": "A MERN Stack App for Jim Buchan's Article Project.",
+  "description": "A simple MERN-Stack with CRUD and REST functionality where you can add articles and view them. Hosted on Heroku, Database provided by MongoDB.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brayden1658/Assignment-1B.git"
+    "url": "git+https://github.com/Ratchet7x5/software-article-database-app.git"
   },
   "bugs": {
-    "url": "https://github.com/brayden1658/Assignment-1B/issues"
+    "url": "https://github.com/Ratchet7x5/software-article-database-app/issues"
   },
-  "homepage": "https://github.com/brayden1658/Assignment-1B#readme",
+  "homepage": "https://github.com/Ratchet7x5/software-article-database-app#readme",
   "engines": {
     "node": "16.x"
   }
