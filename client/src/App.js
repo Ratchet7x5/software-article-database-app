@@ -19,9 +19,9 @@ const App = () => {
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/SEPractice">Select the Practice</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/ViewAllArticles">View All Articles</NavLink>
           </li>
@@ -32,7 +32,7 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/SEPractice" element={<SEPractice />} />
+            {/* <Route path="/SEPractice" element={<SEPractice />} /> */}
             <Route path="/ViewAllArticles" element={<ViewAllArticles />} />
             <Route path="/SubmitArticle" element={<SubmitArticle />} />
             {/* All other paths should redirect to NotFoundPage */}
