@@ -29,9 +29,6 @@ const ViewAllArticles = () => {
           <th>Source</th>
           <th>Published Year</th>
           <th>DOI</th>
-          <th>Claim</th>
-          <th>Evidence</th>
-          <th>SE Practice</th>
         </tr>
         {data.map((item, i) => (
           <tr key={i}>
@@ -40,9 +37,6 @@ const ViewAllArticles = () => {
             <td>{item.source}</td>
             <td>{item.pubyear}</td>
             <td>{item.doi}</td>
-            <td>{item.claim}</td>
-            <td>{item.evidence}</td>
-            <td>{item.sepractice}</td>
           </tr>
         ))}
       </tbody>
