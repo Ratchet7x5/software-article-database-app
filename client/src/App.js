@@ -1,14 +1,11 @@
-import React/*, { useRef }*/ from "react";
-import { BrowserRouter as Router, Routes, Route, NavLink, Navigate/*, useLocation*/ } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom";
 import "./index.css"
 
 import Home from "./pages/Home";
-import SEPractice from "./pages/SE-Practice";
 import ViewAllArticles from "./pages/ViewAllArticles";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
-
-//prep heroku deployment
 
 const App = () => {
   return (
@@ -19,7 +16,7 @@ const App = () => {
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
-          {/* <li>
+          {/* <li> 
             <NavLink to="/SEPractice">Select the Practice</NavLink>
           </li> */}
           <li>
