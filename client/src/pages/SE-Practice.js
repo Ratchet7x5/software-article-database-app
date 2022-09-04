@@ -1,3 +1,6 @@
+/**
+ * This page has been disabled temporarily. 
+ */
 import articles from "../dummydata/articles";
 import TableStyles from "../components/TableStyle";
 import Table from "../components/EvidenceTable";
