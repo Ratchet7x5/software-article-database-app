@@ -2,10 +2,10 @@
 A simple MERN Stack app where users can add articles. 
 
 # Current Functionality:
-* Submit Articles to MongoDB
-* View All Articles (data retrieved from MongoDB)
+* Submit Articles to the Database 
+* View All Articles stored in the Database
 
-# To-do
+# To-do:
 * Allow users to: 
 * edit articles
 * delete articles
