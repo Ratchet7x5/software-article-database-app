@@ -8,4 +8,4 @@ A simple MERN Stack app where users can add articles.
 # To-do
 * Allow users to: 
 * edit articles
-* delet articles
+* delete articles
