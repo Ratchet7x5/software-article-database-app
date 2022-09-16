@@ -16,7 +16,7 @@
     "mongoose": "^6.3.3",
     "nodemon": "^2.0.16"
   },
-  "description": "A simple MERN-Stack with CRUD and REST functionality where you can add articles and view them. Hosted on Heroku, Database provided by MongoDB.",
+  "description": "A simple MERN-Stack with CRUD and REST functionality where you can add articles and view them. Hosted on Heroku, Database used is MongoDB.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ratchet7x5/software-article-database-app.git"
