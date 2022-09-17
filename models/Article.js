@@ -20,19 +20,7 @@ const articleSchema = new mongoose.Schema({
     doi: {
         type: String,
         required: true
-    },
-    claim: {
-        type: String,
-        required: true
-    },
-    evidence: {
-        type: String,
-        required: true
-    },
-    sepractice: {
-        type: String,
-        required: true
-    },
+    }
 });
 
 const Article = mongoose.model("Article", articleSchema);
