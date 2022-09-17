@@ -30,7 +30,11 @@ const TableColumns = [
   {
     Header: "SE Practice",
     accessor: "sepractice",
-  },
+  },  
+  {
+    Header: "ID",
+    accessor: "_id",
+  }
 ];
 
 export default TableColumns;
