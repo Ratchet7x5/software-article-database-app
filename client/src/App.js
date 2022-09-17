@@ -10,7 +10,7 @@ import NotFoundPage from "./pages/404";
 const App = () => {
   return (
     <Router >
-      <div>
+      <div id="App">
         <h1>Software Article Database Application (SADA)</h1>
         <ul className="header">
           <li>
